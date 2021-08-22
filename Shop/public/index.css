@@ -1,0 +1,104 @@
+.nav-wrapper {
+    padding: 0 32px;
+    background: crimson;
+    /* background: indigo; */
+}
+
+body {
+    background: oldlace;
+}
+
+.price {
+    font-size: 32px;
+}
+
+h1 {
+    font-size: 40px;
+    color: #000;
+    text-align: center;
+    font-family: serif;
+}
+
+.course {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.course h1 {
+    margin-bottom: 32px;
+    font-family: serif;
+}
+
+.course img {
+    max-width: 600px;
+    height: auto;
+}
+
+.course .price.big {
+    font-size: 40px;
+    font-family: serif;
+}
+
+.index_p {
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    font-family: serif;
+    font-weight: 500;
+}
+
+.card-action.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course_text {
+    font-size: 20px;
+    color: #6666;
+    font-weight: 400;
+    text-align: center;
+    font-family: serif;
+}
+
+.card_text {
+    font-size: 20px;
+    font-weight: 400;
+    color: #060606;
+    font-family: serif;
+}
+
+.card .card-action:last-child {
+    background: #f4f6f6;
+}
+
+.course-from {
+    margin-bottom: 32px;
+}
+
+.auth {
+    padding-top: 16px;
+}
+
+.card .card-content1 {
+    background: papayawhip;
+}
+
+.back {
+    background:papayawhip;
+    border-radius: 3px;
+}
+
+.alert {
+    padding: 8px 16px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 16px;
+    background: rgba(255, 0, 0, .3);
+    color: red;
+}
+.tabs .tab a{
+    color:black;
+}

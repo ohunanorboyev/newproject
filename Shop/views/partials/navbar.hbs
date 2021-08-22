@@ -1,0 +1,53 @@
+<nav>
+    <div class="nav-wrapper">
+        <a href="/" class="brand-logo">Internet Magazin</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+            {{#if isHome}}
+                <li class="active"><a href="/">Bosh saxifa</a></li>
+                {{else}}
+                <li><a href="/">Bosh saxifa</a></li>
+                {{/if}}
+
+                {{#if isCourses}}
+                <li class="active"><a href="/courses">Mahsulotlar</a></li>
+                {{else}}
+                <li><a href="/courses">Mahsulotlar</a></li>
+                {{/if}}
+
+            {{#if isAuth}}
+                {{#if isAdd}}
+                <li class="active"><a href="/add">Mahsulot qo'shish</a></li>
+                {{else}}
+                <li><a href="/add">Mahsulot qo'shish</a></li>
+                {{/if}}
+
+
+                {{#if isCard}}
+                <li class="active"><a href="/card">Korzina</a></li>
+                {{else}}
+                <li><a href="/card">Korzina</a></li>
+                {{/if}}
+
+                {{#if isOrder}}
+                <li class="active"><a href="/orders">Buyurtmalar</a></li>
+                {{else}}
+                <li><a href="/orders">Buyurtmalar</a></li>
+                {{/if}}
+
+                <li><a href="/auth/logout">Chiqish</a></li>
+
+            {{else}}
+                {{#if isLogin}}
+                <li class="active"><a href="/auth/login#login">Kirish</a></li>
+                {{else}}
+                <li><a href="/auth/login#login">Kirish</a></li>
+                {{/if}}
+
+            {{/if}}
+
+
+
+        </ul>
+    </div>
+</nav>

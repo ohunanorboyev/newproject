@@ -1,0 +1,27 @@
+<h1>Mahsulot qo'shish</h1>
+
+<form action="/add" method="POST">
+    <div class="input-field ">
+        <input id="title" name="title" type="text" class="validate" required>
+        <label for="title">Mahsulot nomi</label>
+        <span class="helper-text" data-error="Nomini kiriting"></span>
+    </div>
+
+    <div class="input-field ">
+        <input id="price" name="price" type="number" class="validate" min="1" required>
+        <label for="price">Mahsulot narxi</label>
+        <span class="helper-text" data-error="Narxini kiriting"></span>
+
+    </div>
+
+    <div class="input-field ">
+        <input id="img" name="img" type="text" class="validate" required>
+        <label for="img">Mahsulot rasmi</label>
+        <span class="helper-text" data-error="Rasmini kiriting"></span>
+
+    </div>
+
+        <input type="hidden" name="_csrf" value="{{csrf}}">
+
+    <button class="btn btn-primary">Qo'shish</button>
+</form>
